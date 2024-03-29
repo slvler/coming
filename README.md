@@ -1,60 +1,40 @@
-## Cloud Course
-
-- aws dersleri
-- cloud teknolojisinin anlatıldığı kurs
+# Cloud Konuları
 
 
-- ilgili amazon servisleri
-    - ec2
-    - route 53
-    - Key Management Service
-    - AWS Transfer Family
+## Açıklamalar
+
+- Temel amaç cloud ortam ve platformlarının düzenlenmesi
 
 
-### Instance
-### Network - vpc
-### Router
-### Storage - Volume
-### Key pair 
-    - ssh ile bağlantı için verilen sertifikalarının yönetildiği alan
+# İçindekiler
 
 
-- AWS Key Services / Technologies
-    - Identity Access Management (IAM)*
-    - Simple Storage Service (S3) *
-    - Elastic Compute Cloud (EC2) *
-    - Elastic Block Storage (EBS) *
-    - Elastic Load Balancing (ELB) *
-    - Elastic Container Service (ECS) *
-    - Elastic Container Registry (ECR)*
-    - Elastic Kubernetes Service (EKS) * 
-    - Elastic Beanstalk
-    - Relation Database Service (RDS) *
-    - AWS CLI *
-    - Route 53 *
-    - CloudFront *
-    - ElastiCache *
-    - Auto Scaling *
-    - CodeArtifact *
-    - CodeBuild *
-    - CodeCommit *
-    - CodeDeploy *
-    - CodeGuru *
-    - CodePipeline *
-    - CodeStar *
-    - X-Ray *
-    - KMS *
-    - Lambda *
-    - Kinesis *
-    - Aurora *
-    - Dynamo DB
-    - SQS *
-    - SNS *
-    - Step Functions *
-    - Api Gateway *
-    - SES *
-    - Cognito *
-    - CloudWatch *
-    - EC2 Systems Manager
-    - Cloud Formation*
-    - CloudTrail *
+### Aws
+
+- [EC2](#ec2)
+	- [network](#network)
+	- [PEM dosyası](#pem)
+
+
+- [Amazon EBS](#ebs)
+    - [Go programlama dili hakkında temel bilgiler](#information-go-programming)
+
+<a name="ec2"></a>
+## EC2
+
+- işletim sistemi seçilen servistir
+- Sistem Konfigürasyonu seçilir. İşletim sistemi, gpu, cpu, ram ve donanım ve imaj kısımlarının belirlendiği servistir.
+- network seçimi sonucunda private veya public olması durumu belirlenir. dışarıdan ulaşım durumu
+- Cloud Block Storage - Amazon EBS
+
+<a name="network"></a>
+### Network katmanı
+
+<a name="pem"></a>
+### Pem dosyası
+- pem dosyası, ssh bağlantısı
+
+
+<a name="ebs"></a>
+## Amazon Elastic Block Store
+- bu servis depolama alanı olarak özel alan belirlenmesini sağlar
