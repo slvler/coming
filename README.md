@@ -16,10 +16,24 @@
 	- [Network](#network)
 	- [Key pair](#key-pair)
     - [IAM role](#iam-role)
-- [Amazon EBS](#ebs)
+    - [SSH](#ssh)
+- [Amazon Elastic Container Service](#ecs)
+- [Amazon Simple Storage Service](#s3)
+    - [bucket oluşturma](#bucket)
+- [Amazon Elastic Block Store](#ebs)
+- [Amazon Elastic File System](#efs)
 - [Autoscaler](#autoscaler)
+    - [Sabit ip](#elastic-ip)   
 - [Load Balancer](#load-balancer)
 - [Lambda](#lambda)
+- [Network](#network)
+    - [Amazon Virtual Private Cloud](#vpc)
+    - [Amazon Route 53](#53)
+    - [Amazon CloudFront](#cloud-front)
+
+- [Network](#network)
+    - [Amazon Virtual Private Cloud](#vpc)
+
 
 
 
@@ -56,6 +70,16 @@
 ### IAM role
 - mevcut imajı (makinayı) ayağa kaldıran kişinin rolü ve yetkisinin belirlendiği ayardır.
 
+<a name="ssh"></a>
+### SSH
+- indirilen, oluşturulan pem dosyası ile ssh bağlantısı yapıyoruz
+
+<a name="ecs"></a>
+## Amazon Elastic Container Service
+
+<a name="s3"></a>
+## Amazon Simple Storage Service
+- Depolama alanı olarak kullanılır.
 
 <a name="ebs"></a>
 ## Amazon Elastic Block Store
@@ -64,8 +88,49 @@
 <a name="autoscaler"></a>
 ## Autoscaler
 
+- otomatik olarak sunucu alma, kiralama çoğalma durumudur. 
+- örnek -> 2 makinanız var misal kampanya süresine girdi otomatik olarak 4 makinaya çıkıyorsun.
+- sunucuları ölçekleme için kullanılan durumlardır.
+- çeşitli satın alma durumları içinde kullanılır.
+
+<a name="elastic-ip"></a>
+### Elastic IP
+
+- elastic ip / domain yönlendirmelerin kullanılan ip adresi
+- makina kapatılıp açılınca değişmek - sabit ip
+
 <a name="load-balancer"></a>
 ## Load Balancer
 
+- otomatik olarak alınan sunuculara trafik yönlendirmek için otomatik yönlendiricidir.
+
 <a name="lambda"></a>
 ## Lambda
+
+- sunucu seçmeden kod çalıştırmaya yarar.
+- request gelir işlem yapılır ve response verilir.
+- misal telefon numarası geldi, gönderilecek mesaj hazırlandı, gelen telefon numarasına mesaj gönderildi. 
+
+
+<a name="network"></a>
+## Network
+
+- Sunucular arasındaki bağlantılar, iletişim, erişim alanlarının düzenlenmesi
+
+<a name="vpc"></a>
+### Amazon Virtual Private Cloud
+
+- aws tarafında kendi tanımlanan sanal ağda başlatılan erişim ortamıdır.
+- alt ağ oluşturmak ve çok katmanlı güvenlik hizmeti sağlar
+
+<a name="53"></a>
+### Amazon Route 53
+
+- dns servisidir.
+- domain yönlendirme, rood balancer kurulumu hepsi bu servis içerisindedir.
+
+<a name="cloud-front"></a>
+### Amazon CloudFront
+
+- cdn - ön bellek servisidir.
+- Belge, dosya cache için kullanılır.
