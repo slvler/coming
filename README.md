@@ -1,13 +1,9 @@
 # Cloud Konuları
 
-
 ## Açıklamalar
-
 - Temel amaç cloud ortam ve platformlarının düzenlenmesi
-
-
+- 
 # İçindekiler
-
 
 ### Aws
 
