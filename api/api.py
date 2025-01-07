@@ -7,6 +7,7 @@ class APIEndpoint(object):
         return response.json()
 
     def get(self, url):
+        print(url)
         return self.request("GET", url)
 
     def put(self, url):
