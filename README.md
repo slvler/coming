@@ -2,8 +2,8 @@
 ```python
 from client import Unsplash
 
-api_key = 'unntZPEoj9kxhfHS4R-Iv0594jQk9EdqeJEhKt7RNPM'
-secret_key = 'Qjup2n0MogMW36eb_TylUjasHD1iYQ2C6ZrbaZWbTd8'
+api_key = 'api_key'
+secret_key = 'secret_key'
 unsplash = Unsplash(api_key, secret_key)
 
 #print(unsplash.photos.all())
