@@ -1,5 +1,5 @@
 import urllib3
-from api import photos, users, collections
+from api import photos, users, collections, topics, stats
 
 DEFAULT_URL = 'https://api.unsplash.com/'
 
@@ -27,4 +27,6 @@ class Unsplash:
         self.photos = photos.API(self.client)
         self.users = users.API(self.client)
         self.collection = collections.API(self.client)
+        self.topics = topics.API(self.client)
+        self.stats = stats.API(self.client)
 
